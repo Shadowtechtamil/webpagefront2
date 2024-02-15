@@ -12,13 +12,17 @@ const Home = () => {
   const[isLoading,setLoading]=useState(true);
   
   useEffect(() => {
-    // Simulate content loading delay with setTimeout
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust the delay time as needed
+    const handleLoad = () => {
+      setLoading(false); // Set loading to false when the page is fully loaded
+    };
 
-    // Clean up timeout to prevent memory leaks
-    return () => clearTimeout(timeout);
+    window.addEventListener('load', handleLoad);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      setLoading(false);
+    };
   }, []);
 
   return isLoading ?<Loading /> : (
