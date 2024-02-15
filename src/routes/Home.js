@@ -7,7 +7,6 @@ import Scrolltotop from '../components/Scrolltotop.js';
 import Footer from '../components/Footer.js';
 
 const Home = () => {
-
   return (
     <>
         <Navbar />
