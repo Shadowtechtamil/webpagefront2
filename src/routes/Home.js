@@ -15,16 +15,21 @@ const Home = () => {
     const handleLoad = () => {
       setLoading(false); // Set loading to false when the page is fully loaded
     };
-
+  
+    const handleUnload = () => {
+      setLoading(true); // Set loading to true before navigating away from the page
+    };
+  
     window.addEventListener('load', handleLoad);
-
-    // Cleanup the event listener on component unmount
+    window.addEventListener('beforeunload', handleUnload);
+  
+    // Cleanup the event listeners on component unmount
     return () => {
       window.removeEventListener('load', handleLoad);
+      window.removeEventListener('beforeunload', handleUnload);
       setLoading(false);
     };
   }, []);
-
 
 
 
