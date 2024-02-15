@@ -6,6 +6,7 @@ import Scrolltotop from '../components/Scrolltotop.js';
 import Footer from '../components/Footer.js';
 import Loading from './Loader/Loading.js';
 const Blog = () => {
+
   const[isLoading,setLoading]=useState(true);
   
   useEffect(() => {
@@ -21,6 +22,7 @@ const Blog = () => {
       setLoading(false);
     };
   }, []);
+  
   return isLoading ? (<Loading />):(
     <>
       <Navbar />
