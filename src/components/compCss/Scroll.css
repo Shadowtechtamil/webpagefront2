@@ -1,0 +1,27 @@
+.gototop
+{
+    background-color: #e5a102;
+    width:50px;
+    height:41px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    clip-path: polygon(15% 0,85% 0,100% 25%,75% 100%,25% 100%,0 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.gototop i
+{
+    color: #121013;
+    font-size: 1.6rem;
+}
+.gototop.visible 
+{       
+    opacity: 1;
+    visibility: visible;
+}

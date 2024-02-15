@@ -1,0 +1,134 @@
+.video-table
+{
+    color:white;
+    width:100%;
+    background-color: #1f1f1f;
+    margin: 85px 0;
+}
+table{
+    width:100%;
+    border: 1px solid #3e3e3e;
+    border-collapse: collapse;
+}
+th{
+    font-family:'Oxanium', sans-serif ;
+    font-weight: 700;
+}
+th,td{
+    text-align: center;
+    padding: 5px 20px;
+    text-wrap: nowrap;
+}
+td{
+    border-top: 1px solid #3e3e3e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+tbody tr:hover
+{
+    background-color: #282828;
+}
+td:first-child
+{
+    border-right: 1px solid #3e3e3e;
+    width:60%;
+}
+.video-column-1
+{
+   display: flex;
+   position: relative;
+   align-items: center;
+   height:83px;
+   overflow: hidden;
+}
+.cont-btn-edit
+{
+    display: none;
+    padding-left: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+td:hover .cont-btn-edit
+{
+    display: block;
+}
+.video-column-1 .video-thumb{
+    width:120px;
+    height:68px;
+    margin:8px;
+}
+.video-thumb img
+{
+    width:120px;
+    height:68px;
+    margin: 1px;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+@media screen and (max-width:800px) 
+{
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr 
+    { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    td:first-child
+    {
+        border-right: none;
+        width:100%;
+    }
+    tr:nth-of-type(odd) { 
+        background: #282828; 
+      }
+
+	td 
+    { 
+		border: none;
+		border-bottom: 1px solid #3e3e3e; 
+		position: relative;
+		padding-left: 35%;
+        text-wrap: nowrap; 
+	}
+	
+	td:before 
+    { 
+		position: absolute;
+		left: 20px;
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	td:nth-of-type(1):before { content: "Video"; }
+	td:nth-of-type(2):before { content: "Posted Date"; }
+	td:nth-of-type(3):before { content: "Duriation"; }
+	td:nth-of-type(4):before { content: "Views"; }
+	td:nth-of-type(5):before { content: "Likes"; }
+
+    .video-column-1
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        height:100%;
+        text-wrap: wrap;
+        
+    }
+    .video-column-1 .video-thumb
+    {
+        width:120px;
+        height:68px;
+        margin:8px;
+    }
+    .video-thumb img
+    {
+        width:120px;
+        height:68px;
+        margin: 1px;
+    }
+}

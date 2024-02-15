@@ -1,23 +1,52 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './routes/Home';
+import Videos from './routes/Videos';
+import Blog from './routes/Blog';
+import About from './routes/About';
+import Contact from './routes/Contact';
+import Videoplay from './routes/Videoplay';
+import AdminPanel from './routes/adminpanelroutes/AdminPanel';
+import Dashboard from './routes/adminpanelroutes/Dashboard';
+import Content from './routes/adminpanelroutes/Content';
+import UploadContent from './routes/adminpanelroutes/UploadContent';
+import VideoUpload from './routes/adminpanelroutes/VideoUpload';
+import BlogUpload from './routes/adminpanelroutes/BlogUpload';
+import DevTest from './DevTest';
+import Loginpage from './routes/Loginpage/Loginpage';
+import Dev from './Dev';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Routes>
+        <Route path='/'  element={<Home />}/>
+        <Route path='/videos'  element={<Videos />}/>
+        <Route path='/blog'  element={<Blog />}/>
+        <Route path='/about'  element={<About />}/>
+        <Route path='/contact'  element={<Contact />}/>
+        <Route path='/watch/:videoId' element={<Videoplay /> }/>
+        <Route path='admin' 
+              element=
+              {
+                
+                    <AdminPanel />
+                
+              }>
+          <Route  path='dashboard'  index element={<Dashboard />}/>
+          <Route  path='content' element={<Content />}/>
+          <Route  path='upload' element={<UploadContent />}>
+                <Route path='video' element={<VideoUpload />} />
+                <Route path='blog' element={<BlogUpload />} />
+          </Route>
+        </Route>
+        <Route  path='/devtest' element={<DevTest />} />
+        <Route path='/dev' element={<Dev />} />
+        <Route  path='/login' element={<Loginpage />} />
+      </Routes>
+      
     </div>
   );
 }

@@ -1,0 +1,187 @@
+.Video-Container
+{
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.heading-off
+{
+    display: none;
+}
+.filter-on
+{
+    width:100%;
+    height:100%;
+    padding: 0.5rem 2rem;
+}
+.filter-con
+{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.filter-con button{
+    width:5rem;
+    height:2.3rem;
+    margin:0 10px 0 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.filter-off
+{
+    display: none;
+}
+.Video-Container h1{
+    color: white;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    text-align: left;
+    font-family: "Oxanium", sans-serif;
+}
+.video-section
+{
+    width:100%;
+    height:100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.video-card
+{
+    color:white;
+    width: 410px;
+    height:310px;
+    margin:8px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight:700 ;
+    
+}
+.video-card .thumb{
+    width:100%;
+    border-radius: 15px;
+    height:230px;
+    background-color: #3f3f3f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.vid-duriation
+{
+    margin: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.vid-duriation p{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+.thumb img 
+{
+    width:100%;
+    height:230px;
+    border-radius: 15px;
+    object-fit: fill;
+    margin: 0;
+    
+}
+.vid-title
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .5rem .5rem;
+}
+.video-card p{
+    padding: 0 0.5rem;
+}
+.card-vd-details
+{
+    display: flex;
+    text-wrap: nowrap;
+    padding:0 0.5rem;
+    color:#aaaaaa;
+}
+.card-vd-details span{
+    margin:0 3px;
+    font-size: 0.9rem;
+}
+@media screen and (max-width:850px) 
+{
+    .Video-Container
+    {
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+    .Video-Container h1
+    {
+        color: white;
+        padding: 1rem 0.5rem;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .video-card
+    {
+        width: 360px;
+        height:280px;
+        margin:8px;
+    }
+    .video-card .thumb{
+        width:100%;
+        height: 202px;
+    }
+    .thumb img 
+    {
+        width:100%;
+        height:100%;
+        border-radius: 15px;
+        object-fit: fill;
+        margin: 0;
+        
+    }
+    .video-card h3
+    {
+        padding: 1;
+    }
+    
+}
+@media screen and (max-width:500px) 
+{
+    .video-card
+    {
+        margin:8px;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .video-card .thumb
+    {
+        width:100%;
+        border-radius: 5px;
+        height:230px;
+        background-color: #3f3f3f;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+    .thumb img 
+    {
+        border-radius: 5px
+    }
+}

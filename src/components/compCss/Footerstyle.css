@@ -1,0 +1,135 @@
+    .footer
+    {
+        width: 100%;
+        margin-top:2rem;
+        position: relative;
+        background-color: #1a0e22;
+        color: white;
+        overflow: hidden;
+        text-align: start;
+    }
+    .foot-top
+    {
+        padding: 2rem 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-wrap: nowrap;
+       
+    }
+    h5
+    {
+        position: relative;
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        font-family:'Oxanium', sans-serif ;
+       
+    }
+    h5::before 
+    {
+        content: ""; /* Empty content */
+        position: absolute;
+        bottom: 10px; /* Adjust position to move the underline below the text */
+        left: 0;
+        width:35px;
+        border-bottom: 4px solid #e5a102; /* Adding bottom line */
+    }
+    .ft-t-logo-info p
+    {
+        font-size: 1rem;
+        font-weight: 100;
+        padding :.3rem 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
+
+    .foot-top div 
+    {
+        display: flex;
+        flex-direction: column;
+        padding:0.5rem;
+    }
+    .foot-top a
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding :.3rem 0;
+        font-weight: 100;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
+    .foot-top a:hover
+    {
+        color: #e5a102;
+        transform: translateX(5px);
+        transition: transform 0.3s ease;
+    }
+
+    .t-ss-container
+    {
+        padding: 0px !important;
+    }
+    .ft-sm-li
+    {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 0px !important;
+    }
+    .ft-sm-li a{
+        font-size: 1.5rem !important;
+        padding:  0rem !important;
+    }
+    .ft-sm-li a:hover
+    {
+        transform: none ;
+    }
+    .ss-ytsubs a
+    {
+        
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0.5rem;
+        color: black;
+        background-color:#e5a102;
+        outline: none;
+        border: none;
+        clip-path: polygon(10% 0,100% 0,90% 100%,0 100%);
+        font-family:'Oxanium', sans-serif ;
+        font-weight: 700;
+    }
+    .ss-ytsubs a:hover
+    {
+        color: black;
+        background-color: #d2080c;
+        transform: translateX(15px);
+        transition: transform 0.5s ease;
+    }
+    .foot-bottom
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #120918;
+        padding: 1rem 6rem ;
+        font-size: 1rem;
+        text-wrap: nowrap;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+    }
+    .foot-bottom a{
+        color:#e5a102;
+        text-decoration: none;
+    }
+@media screen and (max-width:500px)
+{
+    .foot-top
+    {
+        padding: 2rem 2rem;
+    }
+    .foot-bottom
+    {
+        padding: 1rem 2rem ;
+        font-size: 0.7rem;
+    }
+}

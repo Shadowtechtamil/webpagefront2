@@ -1,0 +1,113 @@
+.hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero-mid
+{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+    margin-top:60px;
+    object-fit: cover;
+}
+.hero-mid img{
+    width: 100%;
+    height: 60vh;
+   
+}
+
+.hero-text
+{
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px #121013;
+    font-weight: 900;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 800;
+}
+
+.hero-text p{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0 3rem 2rem 3rem;
+    text-shadow: 2px 2px 4px #121013;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.hero-text .show
+{
+    background-color: #e5a102;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: #121013;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family:'Oxanium', sans-serif ;
+}
+.hero-text .hide
+{
+    display: none;
+}
+@media screen and (max-width:850px) 
+{
+    .hero-text h1
+    {
+        font-size: 2.7rem;
+        padding: 1rem 2rem ;
+    }
+    .hero-text p 
+    {
+        font-size: 1rem;
+        padding: 0 1rem 2rem 1rem;
+    }
+    .hero-text
+    {
+        position: absolute;
+        top:65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .hero{
+        width: 100%;
+        height: 90vh;
+        position: relative;
+    }
+    .hero-mid
+    {
+        width: 100%;
+        height: 60vh;
+    }
+    .hero-mid .hero-text 
+    {
+        position: absolute;
+        padding: 1rem;
+        top:65%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+        width: 100%;
+    }
+    .hero-text .show
+    {
+        background-color: #e5a102;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        color: #121013;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
