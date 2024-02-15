@@ -21,8 +21,6 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-
-
   return isLoading ?<Loading /> : (
     <>
         <Navbar />
