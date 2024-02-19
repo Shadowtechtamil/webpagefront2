@@ -10,7 +10,7 @@ import Serverloading from './Serverloading.js';
 const VideosSection = (props) => {
 
     const [videos,setVideos]=useState([]);
-    const[pageLoaderror,setPageloaderror]=useState('');
+    const[pageLoaderror,setPageloaderror]=useState(true);
 
 
     const limit=props.limit;
@@ -33,8 +33,7 @@ const VideosSection = (props) => {
           await axios.get(`${baseurl}/info`).then(
             (response)=>{
               const recentdata=response.data;
-              
-                if(limit)
+              if(limit)
               {
                 setVideos(recentdata.slice(limit).reverse());
               }
@@ -42,7 +41,7 @@ const VideosSection = (props) => {
               {
                 setVideos(recentdata.reverse());
               }
-              setPageloaderror(false)
+              setPageloaderror(false);
               
             },
             (error)=>{

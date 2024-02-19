@@ -1,12 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './LoginStyle.css'
+import useAuth from '../../hooks/useAuth';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Loginpage = () => {
+
+    const {setAuth}=useAuth();
+
+    const navigate=useNavigate();
+    const location=useLocation();
+    const from = location.state?.from?.pathname || "/";
+
+    const userRef=useRef();
+
+    const[userName,setUserName]=useState('');
+    const[userPassword,setUserPassword]=useState('');
+
+    useEffect(() => {
+        userRef.current.focus();
+    }, [])
+
 
     const onSubmit=async (e)=>
     {
         e.preventDefault();
+        if(userName === "Sabari" && userPassword === "3211")
+        {
+            // setLoggedIn(true);
+            setAuth({userName,userPassword});
+            setUserName('');
+            setUserPassword('');
+            navigate(from, { replace: true });
+        }
+        else{
+            // setLoggedIn(false);
+            setUserPassword('');
+        }
     };
+    
 
   return (
     <div className='login-main-container'>
@@ -17,7 +48,6 @@ const Loginpage = () => {
                     <h3>ADMIN LOGIN</h3>
                 </div>
                 <div className='login-form'>
-                
                     <form onSubmit={(e)=>onSubmit(e)}>
                         <div>
                             <label htmlFor='username'></label>
@@ -25,7 +55,11 @@ const Loginpage = () => {
                                 type='text'
                                 name='username'
                                 id='username'
+                                ref={userRef}
+                                autoComplete='off'
                                 placeholder='USERNAME'
+                                value={userName}
+                                onChange={(e)=>setUserName(e.target.value)}
                             />
                         </div>
                         <div>
@@ -35,11 +69,13 @@ const Loginpage = () => {
                                 name='password'
                                 id='password'
                                 placeholder='PASSWORD'
+                                value={userPassword}
+                                onChange={(e)=>setUserPassword(e.target.value)}
                             />
                         </div>
-                        <div>
-                            <button className='btn-login' type='reset'>Cancel</button>
-                            <button className='btn-login' type='submit'>LOGIN</button>
+                        <div id='btn-log-ad'>
+                            <button className='btn-login' id="btn-c" type='reset'>Cancel</button>
+                            <button className='btn-login'  type='submit'>Login</button>
                         </div>
                     </form>
                 </div>

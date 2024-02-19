@@ -15,10 +15,10 @@ import BlogUpload from './routes/adminpanelroutes/BlogUpload';
 import DevTest from './DevTest';
 import Loginpage from './routes/Loginpage/Loginpage';
 import Dev from './Dev';
-import Protected from './routes/adminpanelroutes/Protected/Protected';
+import Required from './components/Required';
 
 function App() {
-
+  
   return (
     <div className="App">
       
@@ -29,22 +29,20 @@ function App() {
         <Route path='/about'  element={<About />}/>
         <Route path='/contact'  element={<Contact />}/>
         <Route path='/watch/:videoId' element={<Videoplay /> }/>
-        <Route element={<Protected />}>
+        <Route element={<Required />}>
           <Route path='admin'  element={<AdminPanel />}>
               <Route  path='dashboard'  index element={<Dashboard />}/>
               <Route  path='content' element={<Content />}/>
               <Route  path='upload' element={<UploadContent />}>
                     <Route path='video' element={<VideoUpload />} />
                     <Route path='blog' element={<BlogUpload />} />
-              
+              </Route>
           </Route>
-        </Route>
         </Route>
         <Route  path='/devtest' element={<DevTest />} />
         <Route path='/dev' element={<Dev />} />
         <Route  path='/login' element={<Loginpage />} />
       </Routes>
-      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './compCss/Footerstyle.css'
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
   const[currentYear,setCurrentyear]=useState(new Date().getFullYear());
 
@@ -27,8 +28,8 @@ const Footer = () => {
         <div className='t-r-help'>
                     <h5>Need Help ?</h5>
                     <a href='/'>Terms & Conditions</a>
-                    <a href='/'>About</a>
-                    <a href='/'>Contact</a>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                     <a href='/'>Upcoming Games</a>
         </div>
         <div className='t-ss-container'>
@@ -36,19 +37,19 @@ const Footer = () => {
                   <h5>FOLLOW US</h5>
                   <div className='ft-sm-li'>
                     <a href='/'>
-                      <i class="fa-brands fa-square-twitter"></i>
+                      <i className="fa-brands fa-square-twitter"></i>
                     </a>
                     <a href='/'>
-                      <i class="fa-brands fa-square-instagram"></i>
+                      <i className="fa-brands fa-square-instagram"></i>
                     </a>
                     <a href='/'>
-                      <i class="fa-brands fa-telegram"></i>
+                      <i className="fa-brands fa-telegram"></i>
                     </a>
                   </div>
                 </div>
                 <div className='ss-ytsubs'>
                   <h5>SUBSCRIBE</h5>
-                  <a href='/'>Shadow Tech</a>
+                  <a href='https://www.youtube.com/channel/UCK3XbKT_m0To7mYDYGPES4A'  target="_blank" rel="noopener noreferrer">Shadow Tech</a>
                 </div>
         </div>
         </div>
