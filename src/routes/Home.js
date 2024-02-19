@@ -14,7 +14,7 @@ const Home = () => {
           cName="hero"
           heroimg={heroimg}
           title="EXPLORE EXCITING NEW GAMES"
-          text="Embark on a gaming odyssey with top 10 countdowns, seamless installations, epic story reviews, dynamic gameplay, and fresh adventures  your ultimate gaming experience awaits!"
+          text="Embark on a gaming odyssey with top 10 countdowns, seamless installations, epic story reviews, dynamic gameplay and fresh adventures your ultimate gaming experience awaits!"
           btntext="Explore Blogs and Videos"
           url="/"
           btnClass="show"
