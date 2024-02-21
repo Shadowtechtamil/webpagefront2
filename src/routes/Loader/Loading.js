@@ -1,14 +1,12 @@
 import React from 'react'
 import './Loading.css'
+import logo from '../../assets/logo.png';
 const Loading = () => {
   return (
-    <div className='loading-wrapper'>
-      <div className='loading-container'>
-        <div className='loading-content'>
-            <div className='loading-img'>
-            </div>
+    <div id="preloader">
+        <div class="ring">
+            <img src={logo} alt='' />
         </div>
-      </div>
     </div>
     
   )
