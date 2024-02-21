@@ -7,13 +7,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
 .loading-content
 {
     display: flex;
+    width: 400px;
+    height: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../../assets/proxy\ \(7\).gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    border-radius: 50%;
 }
 .loading-img
 {
