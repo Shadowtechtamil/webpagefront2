@@ -5,6 +5,10 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 const Loginpage = () => {
 
+    useEffect(()=>{
+        document.title="LOGIN";
+    },[]);
+
     const {setAuth}=useAuth();
 
     const navigate=useNavigate();
