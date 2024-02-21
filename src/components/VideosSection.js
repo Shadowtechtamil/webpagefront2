@@ -26,33 +26,30 @@ const VideosSection = (props) => {
     
       //axious for fetch video datas from API
 
-      useEffect(()=>
-      {
-        const getAll=async ()=>
-        {
-          await axios.get(`${baseurl}/info`).then(
-            (response)=>{
-              const recentdata=response.data;
-              if(limit)
-              {
-                setVideos(recentdata.slice(limit).reverse());
-              }
-              else
-              {
-                setVideos(recentdata.reverse());
-              }
-              setPageloaderror(false);
-              
-            },
-            (error)=>{
-              setPageloaderror(true);
-              //re-trigger
-              setTimeout(getAll, 5000);
-            }
-          )
-        };
-        getAll();
-      },[limit]);
+      
+  useEffect(() => {
+    const getAll = async () => {
+      try {
+        const response = await axios.get(`${baseurl}/info`);
+        const recentData = response.data;
+        
+        if (limit) {
+          setVideos(recentData.slice(limit).reverse());
+        } else {
+          setVideos(recentData.reverse());
+        }
+        
+        setPageloaderror(false);
+      } catch (error) {
+        console.error('Error occurred while fetching data:', error);
+        setPageloaderror(true);
+        // Retry logic with exponential backoff
+        setTimeout(getAll, 5000); // Retry after 5 seconds
+      }
+    };
+
+    getAll();
+  }, [limit]);
 
 
       //formate date for showing secs,minutes,hours,days,weeks,months,years like 1 minuts ago,15 hours ago etc..,
