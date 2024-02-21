@@ -168,6 +168,7 @@
         display: flex;
         background-color: transparent;
         justify-content: center;
+        background-color: transparent;
         align-items: center;
         opacity: 0;
         transition: .3s ease;
