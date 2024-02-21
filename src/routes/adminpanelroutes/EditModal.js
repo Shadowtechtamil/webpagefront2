@@ -148,7 +148,7 @@ const handelDeletedetails=()=>
                       <div className='ed-con'>
                         <img src={`https://i.ibb.co${editedData.tUrl}`} alt='thumbnail' loading='lazy'/>
                           <div className='form-video-overlay'>
-                            <span>
+                            <span className='ed-icon'>
                               <input
                                 type='file'
                                 id='ed-file-image'  

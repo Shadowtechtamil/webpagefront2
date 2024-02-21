@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import heroimg from '../assets/back hero 3.jpg';
+import heroimg from '../assets/Video.jpg';
 import VideosSection from '../components/VideosSection';
 import Footer from '../components/Footer';
 import Scrolltotop from '../components/Scrolltotop.js';
+import Loading from './Loader/Loading.js';
 
 
-const Videos = () => {
+const Videos = (props) => {
   
-  return (
+  useEffect(()=>{
+    let title = props.title;
+    document.title=title;
+  });
+  const[preloading,setPreloading]=useState(true);
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setPreloading(false);
+    }, 2000);
+  },[]);
+  return preloading ? <Loading />:(
     <>
       <Navbar />
       <Hero

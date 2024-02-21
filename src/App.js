@@ -16,6 +16,7 @@ import DevTest from './DevTest';
 import Loginpage from './routes/Loginpage/Loginpage';
 import Dev from './Dev';
 import Required from './components/Required';
+import Pagenotfound from './routes/Missing/Pagenotfound';
 
 function App() {
   
@@ -24,10 +25,10 @@ function App() {
       
       <Routes>
         <Route path='/'  element={<Home />}/>
-        <Route path='/videos'  element={<Videos />}/>
-        <Route path='/blog'  element={<Blog />}/>
-        <Route path='/about'  element={<About />}/>
-        <Route path='/contact'  element={<Contact />}/>
+        <Route path='/videos'  element={<Videos title="Videos" />}/>
+        <Route path='/blog'  element={<Blog title="Blog" />}/>
+        <Route path='/about'  element={<About title="About"/>}/>
+        <Route path='/contact'  element={<Contact title="Contact"/>}/>
         <Route path='/watch/:videoId' element={<Videoplay /> }/>
         <Route element={<Required />}>
           <Route path='admin'  element={<AdminPanel />}>
@@ -42,6 +43,7 @@ function App() {
         <Route  path='/devtest' element={<DevTest />} />
         <Route path='/dev' element={<Dev />} />
         <Route  path='/login' element={<Loginpage />} />
+        <Route path='*' element={<Pagenotfound />}/>
       </Routes>
     </div>
   );
