@@ -6,8 +6,8 @@ const Blogsection = (props) => {
 
   // const[pageLoaderror,setPageloaderror]=useState(true);
 
-  const[pageLoaderror,setPageloaderror]=useState(true);
-
+  // const[pageLoaderror,setPageloaderror]=useState(true);
+  const  pageLoaderror=true;
   const limit=props.limit;
   const heading=props.heading;
 
@@ -31,10 +31,10 @@ const Blogsection = (props) => {
               setBlog(recentData.reverse());
             }
 
-            setPageloaderror(false);
+            // setPageloaderror(false);
             // setBlog(data.blog);
           } catch (error) {
-            setPageloaderror(true);
+            // setPageloaderror(true);
             console.error('Error fetching video data:', error);
           }
         };
