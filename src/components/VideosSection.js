@@ -10,7 +10,7 @@ import Serverloading from './Serverloading.js';
 const VideosSection = (props) => {
 
     const [videos,setVideos]=useState([]);
-    const[pageLoaderror,setPageloaderror]=useState();
+    const[pageLoaderror,setPageloaderror]=useState(true);
 
 
     const limit=props.limit;
