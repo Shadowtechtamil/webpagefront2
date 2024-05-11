@@ -1,0 +1,13 @@
+.pld-con
+{
+    transform: skew(30deg);
+    overflow: hidden;
+}
+.ptd-con
+{
+    position:absolute;
+    top:35px;
+    left:-20px;
+    transform: skew(-30deg) translateY(-100%);
+    color: #333;
+}

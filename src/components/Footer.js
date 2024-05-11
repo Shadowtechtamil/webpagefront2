@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './compCss/Footerstyle.css'
-import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
   const[currentYear,setCurrentyear]=useState(new Date().getFullYear());
 
@@ -23,13 +23,14 @@ const Footer = () => {
                     <a href='/'>Telegram</a>
                     <a href='/'>What's App</a>
                     <a href='/'>Broadcast</a>
-                    <a href='/'>About Team</a>
+                    <a href='/'>Instagram</a>
         </div>
         <div className='t-r-help'>
                     <h5>Need Help ?</h5>
                     <a href='/'>Terms & Conditions</a>
-                    <NavLink to='/about'>About</NavLink>
-                    <NavLink to='/contact'>Contact</NavLink>
+                    <a href='about'>About</a>
+                    <a href='store'>Store</a>
+                    <a href='contact'>Contact</a>
                     <a href='/'>Upcoming Games</a>
         </div>
         <div className='t-ss-container'>

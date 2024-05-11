@@ -32,7 +32,7 @@ const Blog = (props) => {
           title="LATEST ARTICLES"
           btnClass="hide"
         />
-        <Blogsection heading="heading-off" />
+        <Blogsection heading="heading-off"/>
         <Footer />
         <Scrolltotop />
     </>

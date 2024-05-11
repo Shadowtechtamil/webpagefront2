@@ -1,0 +1,91 @@
+{
+    "product":
+    [
+        {
+            "id":1,
+            "prcat":"Mouse",
+            "prname":"ZEBRONICS-Transform M",
+            "prprice":"250.00",
+            "primage":"https://i.ibb.co/HBrQSvy/zeb-transformer-M-pic1-removebg-preview.png",
+            "prdetails":"ZEBRONICS-Transformer-M with a High-Performance Gold-Plated USB Mouse: 6 Buttons, Multi-Color LED Lights,High-Resolution Sensor with max 3600 DPI, and DPI Switch(Black).",
+            "prrating":"5",
+            "pramazon":"https://amzn.in/d/dc7ADbM",
+            "prflipkart":"https://www.flipkart.com/zebronics-zeb-transformer-m-wired-optical-gaming-mouse/p/itm9414717eb9f98?pid=ACCFU5WZWYREMKKW&lid=LSTACCFU5WZWYREMKKWHORMFU&marketplace=FLIPKART&store=6bo%2Fai3%2F2ay&srno=b_1_15&otracker=browse&fm=organic&iid=aea2c23e-d555-4d7e-997d-ba461ee6af4c.ACCFU5WZWYREMKKW.SEARCH&ppt=browse&ppn=browse&ssid=zcuo4wqmr40000001714621098616"
+        },
+        {
+            "id":2,
+            "prcat":"Mouse",
+            "prname":"EvoFox Blaze",
+            "prprice":"790.00",
+            "primage":"https://i.ibb.co/cwz2PRy/Evo-Fox-Blaze.png",
+            "prdetails":"EvoFox Blaze Programmable Gaming Mouse with 500Hz Polling Rate | Ultra-Responsive 7000fps | Gaming Grade Sensitive DPI Upto 12800 | RGB Lights | Windows Software",
+            "prrating":"4.5",
+            "pramazon":"https://amzn.in/d/hsXgQEc",
+            "prflipkart":"https://www.flipkart.com/evofox-blaze-12800-dpi-gaming-sensor-8-buttons-rgb-wired-optical-mouse/p/itm90ddb8ff5d08f?pid=ACCGVQYGFTPFPDYD&lid=LSTACCGVQYGFTPFPDYDIPDRX2&marketplace=FLIPKART&q=evofox+blaze+mouse&store=6bo%2Fai3%2F2ay&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_ps&fm=search-autosuggest&iid=35990d90-ff10-4edd-a92e-e3793185d024.ACCGVQYGFTPFPDYD.SEARCH&ppt=sp&ppn=sp&ssid=ky6fua79340000001714623225413&qH=3528a9738c5311be"
+        },{
+            "id":3,
+            "prcat":"Headphones",
+            "prname":"Cosmic Byte GS",
+            "prprice":"850.00",
+            "primage":"https://i.ibb.co/rv8JYfh/GS430-BLUE-removebg-preview.png",
+            "prdetails":"Cosmic Byte GS430 Gaming wired over ear Headphone, 7 Color RGB LED and Microphone",
+            "prrating":"4",
+            "pramazon":"https://amzn.in/d/gDvL73T",
+            "prflipkart":"https://www.flipkart.com/cosmic-byte-gs430-wired-headset/p/itm097793e7dfbb2?pid=ACCFPRKY5UMKFVNH&lid=LSTACCFPRKY5UMKFVNHEBHIGP&marketplace=FLIPKART&q=cosmic+byte+headphones&store=0pm%2Ffcn%2Fgc3%2Frph&spotlightTagId=TrendingId_0pm%2Ffcn%2Fgc3%2Frph&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&fm=search-autosuggest&iid=c3a2849d-05a5-4c6d-854a-0a5765437d4f.ACCFPRKY5UMKFVNH.SEARCH&ppt=sp&ppn=sp&ssid=k20dz4am5s0000001714623317432&qH=a85a1104c718b741"
+        },
+        {
+            "id":4,
+            "prcat":"Laptop",
+            "prname":"HP Pavilion 15-dk2000",
+            "prprice":"65,990.00",
+            "primage":"https://i.ibb.co/pjsqyHb/815o-ISo1-G0-L-SL1500-removebg-preview.png",
+            "prdetails":"HP Pavilion Gaming 11th Gen Intel Core i5 15.6 (39.6cm) FHD Gaming Laptop (8GB RAM/512GB SSD/RTX 3050 4GB Graphics/144 Hz/B&O/Windows 10 Home/MS Office/2.23Kg), 15-dk2012TX, Black",
+            "prrating":"5",
+            "pramazon":"https://amzn.in/d/etBmmOL",
+            "prflipkart":""
+        },
+        {
+            "id":5,
+            "prcat":"JoyStick",
+            "prname":"Redgear Pro Wireless",
+            "prprice":"1499.00",
+            "primage":"https://i.ibb.co/Zd9bnFz/51f-Cmfd8-CML-SL1000-removebg-preview.png",
+            "prdetails":"Redgear Pro Wireless Gamepad with 2.4GHz Wireless Technology, Integrated Dual Intensity Motor, Illuminated Keys for PC(Compatible with Windows 7/8/8.1/10 only)",
+            "prrating":"4",
+            "pramazon":"https://amzn.in/d/4aaseyL",
+            "prflipkart":"https://www.flipkart.com/redgear-pro-series-wireless-gamepad/p/itmehwaacnryp3je?pid=ACCEHWAA5HHM6PPG&lid=LSTACCEHWAA5HHM6PPGCDKBJ6&marketplace=FLIPKART&q=redgear+joystick+wireless&store=4rr%2Fkm5%2Fr39&spotlightTagId=FkPickId_4rr%2Fkm5%2Fr39&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_2_24_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_2_24_na_na_na&fm=search-autosuggest&iid=e2be0199-d4c1-4c52-85c4-103927945b12.ACCEHWAA5HHM6PPG.SEARCH&ppt=sp&ppn=sp&ssid=dvvfys751s0000001715159307593&qH=22a0d59ebd0ca35a"
+        },
+        {
+            "id":6,
+            "prcat":"T-Shirt",
+            "prname":"HP Pavilion 15-dk2000",
+            "prprice":"65,990.00",
+            "primage":"https://i.ibb.co/pjsqyHb/815o-ISo1-G0-L-SL1500-removebg-preview.png",
+            "prdetails":"HP Pavilion Gaming 11th Gen Intel Core i5 15.6 (39.6cm) FHD Gaming Laptop (8GB RAM/512GB SSD/RTX 3050 4GB Graphics/144 Hz/B&O/Windows 10 Home/MS Office/2.23Kg), 15-dk2012TX, Black",
+            "prrating":"5",
+            "pramazon":"https://amzn.in/d/etBmmOL",
+            "prflipkart":""
+        },
+        {
+            "id":7,
+            "prcat":"T-Shirt",
+            "prname":"HP Pavilion 15-dk2000",
+            "prprice":"65,990.00",
+            "primage":"https://i.ibb.co/pjsqyHb/815o-ISo1-G0-L-SL1500-removebg-preview.png",
+            "prdetails":"HP Pavilion Gaming 11th Gen Intel Core i5 15.6 (39.6cm) FHD Gaming Laptop (8GB RAM/512GB SSD/RTX 3050 4GB Graphics/144 Hz/B&O/Windows 10 Home/MS Office/2.23Kg), 15-dk2012TX, Black",
+            "prrating":"5",
+            "pramazon":"https://amzn.in/d/etBmmOL",
+            "prflipkart":""
+        },{
+            "id":8,
+            "prcat":"T-Shirt",
+            "prname":"HP Pavilion 15-dk2000",
+            "prprice":"65,990.00",
+            "primage":"https://i.ibb.co/pjsqyHb/815o-ISo1-G0-L-SL1500-removebg-preview.png",
+            "prdetails":"HP Pavilion Gaming 11th Gen Intel Core i5 15.6 (39.6cm) FHD Gaming Laptop (8GB RAM/512GB SSD/RTX 3050 4GB Graphics/144 Hz/B&O/Windows 10 Home/MS Office/2.23Kg), 15-dk2012TX, Black",
+            "prrating":"5",
+            "pramazon":"https://amzn.in/d/etBmmOL",
+            "prflipkart":""
+        }
+    ]
+}

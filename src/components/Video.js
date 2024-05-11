@@ -44,7 +44,7 @@ console.log(vdetails.url);
             </div>
             <h3>{vdetails.title}</h3>
             <div className='card-vd-details'>
-              <span><Viewscount id={vdetails.url} /></span><span>views</span>
+              <span><Viewscount id={vdetails.url} /></span><span>views</span>.
               <span>{formatTimeDifference(vdetails.date)}</span>
             </div>
         </div>

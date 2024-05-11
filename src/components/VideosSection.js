@@ -79,7 +79,7 @@ const VideosSection = (props) => {
 
   return (
     <div className='Video-Container'>
-        <h1 className={heading}>Latest Videos</h1>
+        <h1 className={heading}>Latest </h1>
         <div className='video-section'>
         
             { pageLoaderror ? <Serverloading /> : videos.map((video) => 
@@ -95,7 +95,7 @@ const VideosSection = (props) => {
                     </div>
                     <h3 className='vid-title'>{video.vTitle}</h3>
                     <div className='card-vd-details'>
-                      <span><Viewscount id={video.vUrl}/></span><span>Views</span>
+                      <span><Viewscount id={video.vUrl}/></span><span>Views</span>.
                       <span>{formatTimeDifference(moment(video.uploadDate))}</span>
                     </div>
                 </div>

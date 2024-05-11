@@ -17,7 +17,8 @@ import Loginpage from './routes/Loginpage/Loginpage';
 import Dev from './Dev';
 import Required from './components/Required';
 import Pagenotfound from './routes/Missing/Pagenotfound';
-
+import PreLoadingbar from './PreLoadingbar';
+import Store from './routes/Store';
 function App() {
   
   return (
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<Home />}/>
         <Route path='/videos'  element={<Videos title="Videos" />}/>
+        <Route path='/store' element={<Store title="Store"/>}/>
         <Route path='/blog'  element={<Blog title="Blog" />}/>
         <Route path='/about'  element={<About title="About"/>}/>
         <Route path='/contact'  element={<Contact title="Contact"/>}/>
@@ -44,6 +46,7 @@ function App() {
         <Route path='/dev' element={<Dev />} />
         <Route  path='/login' element={<Loginpage />} />
         <Route path='*' element={<Pagenotfound />}/>
+        <Route path='/pre' element={<PreLoadingbar />}/>
       </Routes>
     </div>
   );

@@ -5,6 +5,7 @@ import heroimg from '../assets/about.jpg';
 import Footer from '../components/Footer';
 import Scrolltotop from '../components/Scrolltotop.js';
 import Loading from './Loader/Loading.js';
+import Aboutus from '../components/Aboutus.js';
 
 const About = (props) => {
 
@@ -30,6 +31,7 @@ const About = (props) => {
           title="ABOUT STORY"
           btnClass="hide"
         />
+        <Aboutus />
         <Footer />
         <Scrolltotop />
     </>

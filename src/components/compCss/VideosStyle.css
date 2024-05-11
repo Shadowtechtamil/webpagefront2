@@ -1,11 +1,13 @@
 .Video-Container
 {
     position: relative;
+    margin-top: 4rem;
     padding: 1rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .heading-off
 {
@@ -41,7 +43,36 @@
     white-space: nowrap;
     text-align: left;
     font-family: "Oxanium", sans-serif;
+    margin-left: 20px;
 }
+.Video-Container h1::before
+{
+    content: "";
+    height: 24px;
+    top:55px;
+    margin-left: -20px;
+    width:5px;
+    background-color: #e5a102;position: absolute;
+}
+.Video-Container h1::after
+{
+    content: "Videos";
+    color: #e5a102;
+    position: absolute;
+    padding: 0 7px;
+}
+/* .Video-Container h1::after
+{
+    content: "";
+    width:250px;
+    height:20px;
+    background-image: url(../../assets/title_bar04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:85px;
+    left:2rem;
+} */
 .video-section
 {
     width:100%;
@@ -130,8 +161,19 @@
     {
         color: white;
         padding: 2rem 0.5rem;
+        font-size: 1.7rem;
         white-space: nowrap;
         text-align: left;
+    }
+    .Video-Container h1::before
+    {
+        content: "";
+        height: 19px;
+        top:70px;
+        margin-left: -20px;
+        width:5px;
+        background-color: #e5a102;
+        position: absolute;
     }
     .video-card
     {

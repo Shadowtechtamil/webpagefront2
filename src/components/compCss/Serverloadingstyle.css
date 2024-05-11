@@ -1,7 +1,7 @@
 .servrloading-container
 {
     width:100%;
-    height:300px;
+    height:450px;
     margin:0 40px;
     display: flex;
     flex-direction: column;
@@ -11,11 +11,96 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
+.progressbar-con
+{
+    width:70%;
+    padding: 20px;
+}
+.word-div
+{
+    overflow: hidden;
+    height: 45px;
+    
+}
+#list-load li
+{
+    height:45px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom:45px ;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+.words
+{
+    animation: words 15s cubic-bezier(0.23,1,0.32,1.2) infinite;
+}
+
+@keyframes words 
+{
+    0%
+    {
+        margin-top: -360px;
+    }
+    5%
+    {
+        margin-top: -270px;
+    }
+    25%
+    {
+        margin-top: -270px;
+    }
+    30%
+    {
+        margin-top: -180px;
+    }
+    50%
+    {
+        margin-top: -180px;
+    }
+    55%
+    {
+        margin-top: -90px;
+    }
+    75%
+    {
+        margin-top: -90px;
+    }
+    80%
+    {
+        margin-top: 0px;
+    }
+    99.99%
+    {
+        margin-top: 0px;
+    }
+    100%
+    {
+        margin-top: -270px;
+    }
+}
+@media screen and (max-width:850px) 
+{
+    .progressbar-con
+    {
+        width:100%;
+        padding: 20px;
+    }
+}
 @media screen and (max-width:500px) 
 {
     .servrloading-container
     {
         margin: 0 20px;
     }
-    
+    .progressbar-con
+    {
+        width:100%;
+        padding: 20px;
+    }
+    #list-load li
+    {
+        font-size: 1rem;
+    }
 }

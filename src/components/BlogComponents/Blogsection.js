@@ -6,8 +6,9 @@ const Blogsection = (props) => {
 
   // const[pageLoaderror,setPageloaderror]=useState(true);
 
-  const pageloading=true;
+  const[pageLoaderror,setPageloaderror]=useState(true);
 
+  const limit=props.limit;
   const heading=props.heading;
 
   const[blog,setBlog]=useState([]);
@@ -22,34 +23,45 @@ const Blogsection = (props) => {
             }
     
             const data = await response.json();
-            setBlog(data.blog);
+            const recentData = data.blog;
+            
+            if (limit) {
+              setBlog(recentData.slice(limit).reverse());
+            } else {
+              setBlog(recentData.reverse());
+            }
+
+            setPageloaderror(false);
+            // setBlog(data.blog);
           } catch (error) {
+            setPageloaderror(true);
             console.error('Error fetching video data:', error);
           }
         };
     
         fetchData();
-      }, []);
+      }, [limit]);
 
   return (
     <div className='blog-container'>
-        <h1 className={heading}>Latest Articles</h1>
+        <h1 className={heading}>Latest </h1>
         <div className='blog-section'>
-            {pageloading ?<Serverloading /> :blog.map(blogs => (
+            {pageLoaderror ?<Serverloading /> :blog.map(blogs => (
                 <div key={blogs.id} className='blog-card'>
-                    
                         <div className='blog-image-container'>
                             <img src='' alt='img' />
                         </div>
                         <div className='blog-content'>
+                            <p><i class="fa-regular fa-clock"></i> {blogs.posteddate}</p>
                             <h3>{blogs.title}</h3>
-                            <p>{blogs.content}</p>
                         </div>
-                        <span id='rd-b'>Read</span>
+                        <span id='rd-b'>Read More <i className="fa-solid fa-caret-right"></i></span>
                     </div>
-                
             ))}
         </div>
+        {/* <div className='view-m-btn'>
+                <button>Read More</button>
+        </div> */}
     </div>
   )
 }

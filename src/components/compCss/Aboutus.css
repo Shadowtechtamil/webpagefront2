@@ -1,0 +1,37 @@
+.about-con
+{
+    position: relative;
+    margin-top: 2rem;
+    padding:0 2rem 4rem 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.about-con h1{
+    color: white;
+    padding: 1rem 0;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Oxanium", sans-serif;
+}
+.about-content
+{
+    padding:1rem 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-content p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+/* .about-content p:nth-child(1)
+{
+    
+} */

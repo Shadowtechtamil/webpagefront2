@@ -1,0 +1,42 @@
+.arrowbtn {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    top:220px;
+    padding: 1rem 2rem;
+  }
+  
+  .btnleft,
+  .btnright {
+    display: block;
+    position: relative;
+    z-index: 5;
+    transition: all 0.5s;
+    border: 2px solid #bfb9c1;
+    color: #bfb9c1;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .btnleft {
+    float: left;
+    /* Adjust this value to move the button down */
+  }
+  
+  .btnright {
+    right: 8px;/* Adjust this value to move the button down */
+  }
+  @media screen and (max-width:520px) 
+  {
+    .arrowbtn {
+     display: none;
+    }
+  }

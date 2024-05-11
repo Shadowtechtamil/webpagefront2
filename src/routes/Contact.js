@@ -5,6 +5,7 @@ import heroimg from '../assets/contact.jpg';
 import Scrolltotop from '../components/Scrolltotop.js';
 import Footer from '../components/Footer.js';
 import Loading from './Loader/Loading.js';
+import ContactSection from '../components/Contact/ContactSection.js';
 
 
 const Contact = (props) => {
@@ -31,6 +32,7 @@ const Contact = (props) => {
           title="CONTACT"
           btnClass="hide"
         />
+        <ContactSection />
         <Footer />
         <Scrolltotop />
     </>
