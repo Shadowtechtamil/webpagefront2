@@ -21,9 +21,8 @@ const Footer = () => {
                     <h5>COMMUNITY</h5>
                     <section></section>
                     <a href='/'>Telegram</a>
-                    <a href='/'>What's App</a>
+                    <a href='/'>Whatsapp</a>
                     <a href='/'>Broadcast</a>
-                    <a href='/'>Instagram</a>
         </div>
         <div className='t-r-help'>
                     <h5>Need Help ?</h5>

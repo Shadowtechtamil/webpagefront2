@@ -41,6 +41,12 @@
     }
     .store-content
     {
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
         justify-content: center;
+    }
+    .Store-container
+    {
+        padding:1rem 1rem;
     }
 }

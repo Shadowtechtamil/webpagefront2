@@ -31,7 +31,11 @@
     text-align: justify;
     font-size: 1.2rem;
 }
-/* .about-content p:nth-child(1)
+@media screen and (max-width:850px) 
 {
-    
-} */
+    .about-content
+    {
+        padding:0rem;
+        width: 100%;
+    }
+}

@@ -27,7 +27,7 @@ const Products = () => {
 
     const data = await response.json();
     const recentdata=data.product;
-    setProducts(recentdata.slice(0,4));
+    setProducts(recentdata.slice(0,5));
   }
   catch(error)
   {
