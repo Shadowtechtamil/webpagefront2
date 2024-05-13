@@ -33,9 +33,18 @@
 }
 @media screen and (max-width:850px) 
 {
+    .about-con
+    {
+        padding: 0rem;
+    }
     .about-content
     {
         padding:0rem;
         width: 100%;
+    }.about-content p
+    {
+        font-size: 1rem;
+        text-align:justify;
     }
+    
 }

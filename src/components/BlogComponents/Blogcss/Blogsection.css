@@ -128,4 +128,8 @@
         background-color: #e5a102;
         position: absolute;
     }
+    .blog-section
+    {
+        padding: 2rem 0;
+    }
 }

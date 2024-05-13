@@ -24,7 +24,13 @@ const Loginpage = () => {
         userRef.current.focus();
     }, [])
 
-
+    useEffect(() => {
+        const storedAuth = localStorage.getItem('auth');
+        if (storedAuth) {
+            setAuth(JSON.parse(storedAuth));
+            navigate(from, { replace: true });
+        }
+    });
     const onSubmit=async (e)=>
     {
         e.preventDefault();
@@ -32,6 +38,7 @@ const Loginpage = () => {
         {
             // setLoggedIn(true);
             setAuth({userName,userPassword});
+            localStorage.setItem('auth', JSON.stringify({ userName, userPassword }));
             setUserName('');
             setUserPassword('');
             navigate(from, { replace: true });
@@ -42,6 +49,12 @@ const Loginpage = () => {
         }
     };
     
+    const cancelbtn=()=>
+    {
+        setUserName('');
+        setUserPassword('');
+        navigate('/');
+    }
 
   return (
     <div className='login-main-container'>
@@ -78,7 +91,7 @@ const Loginpage = () => {
                             />
                         </div>
                         <div id='btn-log-ad'>
-                            <button className='btn-login' id="btn-c" type='reset'>Cancel</button>
+                            <button className='btn-login' id="btn-c" onClick={cancelbtn}>Cancel</button>
                             <button className='btn-login'  type='submit'>Login</button>
                         </div>
                     </form>

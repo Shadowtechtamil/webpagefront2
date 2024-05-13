@@ -153,6 +153,15 @@
 }
 @media screen and (max-width:500px) 
 {
+    .Contact-container
+    {
+        padding: 4rem 0.5rem;
+    }
+    .contact-form
+    {
+        width: 100%;
+        padding: 1rem 0;
+    }
     .c-sm-mc ul li{
         float: none;
         padding: 0.5rem 1rem;

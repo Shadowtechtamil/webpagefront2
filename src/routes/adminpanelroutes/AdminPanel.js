@@ -10,6 +10,7 @@ const AdminPanel = () => {
     let title = "ADMIN PANEL";
     document.title=title;
   });
+  
   return (
     <div className='Admin-container'>
       <Navpanel />

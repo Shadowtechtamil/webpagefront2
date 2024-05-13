@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './PreLoadingbar.css'
 const PreLoadingBar = () => {
-  const totalTimeInMinutes = 1.4; // Total time in minutes
+  const totalTimeInMinutes = 1.7; // Total time in minutes
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const PreLoadingBar = () => {
     const updateProgress = () => {
       const currentTime = Date.now(); // Get the current time
       const elapsedTime = currentTime - startTime; // Calculate the elapsed time
-      const remainingTime = Math.max(0, endTime - currentTime); // Calculate the remaining time
+      // const remainingTime = Math.max(0, endTime - currentTime); // Calculate the remaining time
       let currentProgress = (elapsedTime / (totalTimeInMinutes * 60 * 1000)) * 100; // Calculate progress in percentage
       currentProgress = Math.min(currentProgress, 100); // Clamp the progress to 100%
       setProgress(currentProgress); // Update progress state
