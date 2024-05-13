@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './PreLoadingbar.css'
 const PreLoadingBar = () => {
-  const totalTimeInMinutes = 1.7; // Total time in minutes
+  const totalTimeInMinutes = 2; // Total time in minutes
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
