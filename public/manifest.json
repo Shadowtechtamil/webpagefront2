@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
+  "short_name": "Shadow Tech",
   "name": "Create React App Sample",
+   "background_color": "#yourColorHex",
+  "theme_color": "#yourColorHex",
   "icons": [
     {
       "src": "favicon.ico",
